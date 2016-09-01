@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="16dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="50dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/image"
+            android:layout_marginBottom="5dp"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Select Joke photo"
+            android:id="@+id/selectImageBtn"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Joke Text"
+            android:text=""
+            android:id="@+id/jokeText"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Launch in : "
+                android:textColor="#fff"
+                android:textSize="16sp"
+                />
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="45dp"
+                android:inputType="numberDecimal"
+                android:maxLength="2"
+                android:text="0"
+                android:id="@+id/timeText"
+                />
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:entries="@array/time"
+                android:id="@+id/timeSpinner"
+                >
+            </Spinner>
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Launch !"
+            android:id="@+id/launchBtn"
+            />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.medinpiranej.fakeerase.MainActivity"
+    android:background="#000"
+    >
+
+    <RelativeLayout
+        android:layout_width="127dp"
+        android:layout_height="192dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/imagesContainer"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/background"
+            />
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="66dp"
+            android:src="@drawable/image1"
+            android:layout_marginTop="95dp"
+            android:layout_marginLeft="6.5dp"
+            android:id="@+id/animationContainer"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imagesContainer"
+        >
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:progress="0"
+            android:layout_marginTop="10dp"
+            android:max="100"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:id="@+id/progress"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="ERASING DEVICE MEMORY"
+            android:textColor="#eee"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:id="@+id/text"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Do not turn off your phone !\n***It will get bricked !***"
+            android:textColor="#eee"
+            android:gravity="center"
+            android:textStyle="italic"
+            android:textSize="12sp"
+            />
+    </LinearLayout>
+</RelativeLayout>
